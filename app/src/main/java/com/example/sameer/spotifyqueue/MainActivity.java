@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         // Aaand we will finish off here.
+        //hello
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
@@ -88,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, intent);
 
         // Check if result comes from the correct activity
-        System.out.println("request code: " + requestCode);
+        System.out.println("request code : " + requestCode);
 
         if (requestCode == REQUEST_CODE) {
             AuthenticationResponse response = AuthenticationClient.getResponse(resultCode, intent);
